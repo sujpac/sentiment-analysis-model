@@ -16,11 +16,11 @@ We will be using the [IMDb dataset](http://ai.stanford.edu/~amaas/data/sentiment
 
 ### Step 1: Download the data
 
-'''bash
+```sh
 "%mkdir ../data\n",
 "!wget -O ../data/aclImdb_v1.tar.gz http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz\n",
 "!tar -zxf ../data/aclImdb_v1.tar.gz -C ../data"
-'''
+```
 
 ### Step 2: Process the data
 
