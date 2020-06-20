@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Film Review Sentiment Analysis</title>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="submit.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Is your film review positive or negative?</h1>
+            <p>Type in a review below and click submit to find out.</p>
+            <form method="POST"
+                  action="https://XXXXXXXXXX.execute-api.us-east-2.amazonaws.com/prod"
+                  onsubmit="return submitForm(this);" > <!-- Insert valid API URL -->
+                <div class="form-group">
+                    <label for="review">Review:</label>
+                    <textarea class="form-control"  rows="5" id="review">Please write your review here.</textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <h1 class="bg-success" id="result"></h1>
+        </div>
+    </body>
+</html>
