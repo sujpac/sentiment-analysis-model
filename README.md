@@ -1,4 +1,4 @@
-# Film Review Sentiment Analysis Model
+# Film Review Sentiment Analysis
 
 ## Background
 We will be using the [IMDb dataset](http://ai.stanford.edu/~amaas/data/sentiment/)
@@ -23,6 +23,8 @@ We will be using the [IMDb dataset](http://ai.stanford.edu/~amaas/data/sentiment
 ```
 
 ### Step 2: Process the data
+
+Since we are using a recurrent neural network, it will be convenient if the length of each review is the same. To do this, we will fix a size for our reviews and then pad short reviews with the category 'no word' (which we will label 0) and truncate long reviews.
 
 ### Step 3: Upload the data to S3
 
