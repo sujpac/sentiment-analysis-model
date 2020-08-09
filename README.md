@@ -14,24 +14,8 @@ We will be using the [IMDb dataset](http://ai.stanford.edu/~amaas/data/sentiment
 6. Deploy the trained model.
 7. Use the deployed model.
 
-### Step 1: Download the data
-
 ```sh
 "%mkdir ../data\n",
 "!wget -O ../data/aclImdb_v1.tar.gz http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz\n",
 "!tar -zxf ../data/aclImdb_v1.tar.gz -C ../data"
 ```
-
-### Step 2: Process the data
-
-Since we are using a recurrent neural network, it will be convenient if the length of each review is the same. To do this, we will fix a size for our reviews and then pad short reviews with the category 'no word' (which we will label 0) and truncate long reviews.
-
-### Step 3: Upload the data to S3
-
-### Step 4: Train the model
-
-### Step 5: Test the model
-
-### Step 6: Deploy the model
-
-### Step 7: Use the model
